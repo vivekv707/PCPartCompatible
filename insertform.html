@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>PC Compatability</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>.footercopy{
+    font-size:1.2em;
+    text-align: center;
+}
+input[type=text], input[type=password],input[type=email],input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style></style>
+
+<script>
+  function validate(){
+    
+   
+  }
+</script>
+<script src="script.js" defer></script>
+<body>
+  <header><div class="headertop" style="justify-content: center;"><div class="logo"><a href="index.html"><img src="pcpp-logo.svg"></a></div>
+
+</div>
+</header>
+<div class="formwrapper">
+    <div class="pagetitle"><h2>Insert details for cpu</h2></div>
+    <div class="formdetails">
+        <form name="reg"  action="insert.php" method="post" >
+          
+            <div class="container">
+              <label for="mname"><b>Model Name</b></label>
+              <input type="text" placeholder="Enter Model Name" name="mname" class="un">
+
+              <label for="imgsrc"><b>img source</b></label>
+              <input type="text" placeholder="Enter image source" name="imgsrc" class="un">
+              <label for="bprice"><b>base price</b></label>
+              <input type="number" placeholder="Enter base price" name="bprice" class="un">    
+              <label for="price"><b>promo price</b></label>
+              <input type="number" placeholder="Enter promo price" name="price" class="un"> 
+              <label for="awhere"><b>avail where</b></label>
+              <input type="text" placeholder="Enter avail url" name="awhere" class="un"> 
+              <button type="submit">Insert</button>
+              
+            </div>
+          
+            <div class="container" >
+              <span class="psw"> <a href="browse.php">See CPU's</a></span>
+            </div>
+          </form>
+    </div>
+
+</div>
+<footer style="    background-color: black;
+padding: 2em;">
+    <div class="footerdetails">
+        <nav><ul class="footerlinks unstyled-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buildguides.php">System Builder</a></li>
+            <li><a href="browse.php">Products</a></li>
+        </ul></nav>
+        <h3 class="footercopy">&copy; Copyright 2022 PCPartsCompatability</h3>
+    </div>
+</footer>
+</body>
+</html>
